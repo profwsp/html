@@ -1,0 +1,41 @@
+
+h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+    padding: 5px;
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+p{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn {
+    color: rgb(0, 255, 145);
+    font-size: 20px;
+    text-align: center;
+}
+.container {
+    background-color: #eee; /*muda a cor de fundo com um tom de cinza mais suave, pra diminuir o contraste da tela*/
+    min-height: 60vh;/* altura mínima de 60 do tamanho da tela*/
+padding: 50px; /* espaçamento 50 px das margens*/ 
+}
+header {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 240, 179);
+    padding: 30px
+}
+.produtos-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.cartao {
+    width: 47%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: px;
+}
