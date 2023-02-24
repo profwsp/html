@@ -1,0 +1,92 @@
+* {
+    padding: 0;/*define para o navegador que o espaçamento a ser usado na página é igual a zero*/
+    margin: 0;/*define para o navegador que a margem a ser usada na página é igual a zero*/
+    box-sizing: border-box;/*espaçamento do padding conta pra dentro da caixa*/
+    font-family: Arial, Helvetica, sans-serif;/* tipo de fonte que será utilizada na página*/
+}
+/* cabeçalho*/
+header{
+    background-color:#3db36b ;
+    color: #fff;
+    padding: 15px;/*espaçamento interno de 15px*/
+    text-align: center;
+    border-bottom: 3px solid #0f642f;
+}
+/* Grid de Produtos*/
+.container {
+    background-color: #eee; /*muda a cor de fundo com um tom de cinza mais suave, pra diminuir o contraste da tela*/
+    min-height: 60vh;/* altura mínima de 60 do tamanho da tela*/
+padding: 50px; /* espaçamento 50 px das margens*/
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;/*margem 0 na altura e centralizar o conteúdo na horizontal*/
+
+}
+.card {
+    width: 31%;/* largura de cada card 31%*/
+    display: inline-block;/*posicionar os cards em linha 3 por linha 3*31%=93% da tela*/
+    margin: 1% 1%;/* adicionar uma margem de 1% entre os cards na vertical e na horizontal*/
+    padding: 15px;/*espaçamento interno de 15pixels*/
+}
+.product-image {
+    height: 300px;/* Altura da imagem*/
+    width: 100%;/* ocupar 100% do espaço disponível de 31% do card*/
+    margin-bottom: 10px;/* afastar em 10px a imagem da descrição*/
+    background-position: center;/*Centralizar a imagem no card*/
+    background-size: cover;/*ajusta automaticamente o tamanho do zoom na imagem para exibir o máximo possivel na área disponível*/
+    
+}
+#img-1 { /*id da imagem, deve ser feito um para cada imagem*/
+    background-image: url(../imagem/tenis1.jpg) ;/* indica o nome da imagem a ser exibida no card*/
+}
+#img-2 { /*id da imagem, deve ser feito um para cada imagem*/
+    background-image: url(../imagem/tenis2.jpg) ;/* indica o nome da imagem a ser exibida no card*/
+}
+#img-3 { /*id da imagem, deve ser feito um para cada imagem*/
+    background-image: url(../imagem/tenis3.jpg) ;/* indica o nome da imagem a ser exibida no card*/
+}
+#img-4 { /*id da imagem, deve ser feito um para cada imagem*/
+    background-image: url(../imagem/tenis4.jpg) ;/* indica o nome da imagem a ser exibida no card*/
+}
+#img-5 { /*id da imagem, deve ser feito um para cada imagem*/
+    background-image: url(../imagem/tenis5.jpg) ;/* indica o nome da imagem a ser exibida no card*/
+}
+#img-6 { /*id da imagem, deve ser feito um para cada imagem*/
+    background-image: url(../imagem/tenis6.jpg) ;/* indica o nome da imagem a ser exibida no card*/
+}
+h3 {
+    margin-bottom: 10px;/*Afasta o título da imagem em 10 pixels da descrição*/
+    color: #3db36b;
+    font-size: 24px;
+    border-left: #0f642f 5px solid;
+    padding-left: 7px;
+}
+.bold {
+    font-weight: bold;
+}
+.card p {
+    margin-bottom: 10px;/* espaçamento após o parágrafo*/
+}
+.btn {
+    display: block; /* o botão será um bloco*/
+    width: 100%;/*100% do tamanho disponível*/
+    text-align: center;/*alinhamento do texto centralizado*/
+    text-transform: uppercase;/*altera a fonte para maiúscula*/
+    text-decoration: none;/*retira o underline do texto*/
+    background-color: #3db36b;/* cor de fundo */
+    color: white;/* cor da fonte*/
+    padding: 15px;/* espaçamento 15 pixels*/
+    border-radius: 5px;/* arredondar os cantos em 5 pixels*/
+}
+.btn:hover { /*especifica qual ação deve acontecer quando o cursor do mouse estiver sobre o botão*/
+    background-color: #0f642f;/*troca a cor de fundo do botão*/
+}
+footer {
+    background-color: #3db36b; /*cor de fundo do rodapé*/
+    color: azure; /* cor da fonte do rodapé*/
+    border-top: 3px solid #0f642f;/* borda superior, espeesura 3pixels, tipo de linha solida cor verde escuro*/
+    padding: 80px;/* Espaçamento de 80 pixels*/
+    text-align: center;/* alinha mento do texto centralizado*/
+}
