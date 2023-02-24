@@ -35,7 +35,7 @@ nav a {/*link da barra de navegação*/
     margin: 1.5rem 0;/*adiciona uma margem de 1.5 vezes a medida padrão do navegador entre os itens*/
     box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;/* adiciona uma sombra na imagem com as cores rgb e o alfa que é a transparência e especifica o deslocamento em pixels em relação aos objetos*/
     padding: 1rem;/*espaçamento interno*/
-    width: 60%;/*ajusta a largura */
+    width: 600px;/*ajusta a largura */
     display: flex;/*exibir os itens um ao lado do outro*/
     flex-direction: column;/*exibir os itens na direção de uma coluna*/
     gap: 1rem;/*distância entre os itens*/
