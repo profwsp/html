@@ -1,0 +1,63 @@
+*{/*altera os itens que são comuns em toda a página*/
+    padding: 0;/*informa ao navegador que os espaçamentos, superior, inferior, esquerdo e direito são iguais a zero*/
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* cabeçalho*/
+header {
+    background-color: #333;/*cor de fundo do cabeçalho*/
+    color: white;/*cor da fonte*/
+    display: flex;/*posiciona os itens um ao lado do outro*/
+    justify-content: space-between;/*acrescente um espaçamento entre os itens no alinhamento justificado*/
+    align-items: center;/*alinha os textos na vertical*/
+    padding: 10px 20px;/*acrescenta um espaçamento a esquerda de 10px e a direita de 20px em relação a margem da página*/
+}
+nav ul{/*lista da barra de navegação*/
+display: flex;/*posiciona os itens um ao lado do outro*/
+list-style: none;/*remove o marcador da lista de itens*/
+gap:10px ;/*espaçamento entre os itens*/
+}
+nav a {/*link da barra de navegação*/
+    color: white;/*altera a cor da fonte dos itens */
+    text-decoration: none;/*remove o underline dos links*/
+
+}
+/*Conteúdo Principal*/
+.news-container {
+    display: flex;/*exibir ois itens um aom lado do outro*/
+    margin: 1rem 0;/*o rem é uma unidade escalável e relativa, ele varia de acordo com a dimensão root(raiz) do seu navegador (por padrão essa unidade é 16px*/
+    gap: 5rem;
+   justify-content: center;/*alinha o conteúdo da página no centro*/
+}
+
+.news-item{
+    border: 1px solid #333;/*adiciona uma borda de 1pixel de espessura */
+    margin: 1.5rem 0;/*adiciona uma margem de 1.5 vezes a medida padrão do navegador entre os itens*/
+    box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;/* adiciona uma sombra na imagem com as cores rgb e o alfa que é a transparência e especifica o deslocamento em pixels em relação aos objetos*/
+    padding: 1rem;/*espaçamento interno*/
+    width: 600px;/*ajusta a largura */
+    display: flex;/*exibir os itens um ao lado do outro*/
+    flex-direction: column;/*exibir os itens na direção de uma coluna*/
+    gap: 1rem;/*distância entre os itens*/
+}
+.news-item img{
+    height: 200px;/*limita a altura da imagem, podendo causar distorção na imagem*/
+    object-fit: cover;/*ajusta a imagem de acordo com a área disponível*/
+}
+/*Barra Lateral*/
+aside h3{/*título*/
+    margin-bottom: 1.5rem;/*adiciona um espaçamento abaixo do título*/
+}
+aside ul{
+    display: flex;/*exibir ois itens um aom lado do outro*/
+    flex-direction: column;/*exibir os itens na direção de uma coluna*/
+    gap: 1rem;/*distância entre os itens*/
+    list-style-position: inside;/*posição dos itens da barra lateral */
+}
+/*Rodapé*/
+footer{
+    padding: 2rem;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
