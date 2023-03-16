@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.anotacao {
+  background-color: rgb(244, 248, 19);
+  padding: 5px;
+  text-align: center;
+}
+
+/* Cabeçalho*/
+.cabecalho {
+  padding: 60px;
+  text-align: center;
+  background-image: url(../imagem/banner_responsivo.png) ;
+  background-size: cover;
+  color: white;
+}
+
+/* Estilo da barra de navegação */
+.barra_nav {
+  display: flex;
+  background-color: #333;
+}
+
+/* Estilo dos links da barra de navegação */
+.barra_nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Trocar a cor quando o cursor estiver sobre o link */
+.barra_nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Coluna  */
+.coluna {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Criar 2 colunas desiguais (30 e 70%) uma ao lado da outra */
+/* Barra lateral/Coluna da esquerda */
+.lateral {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Coluna principal */
+.principal {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Imagem Falsa, apenas para marcação de espaço */
+.imagem_falsa {
+  background-color: #0ec40e7e;
+  width: 100%;
+  padding: 20px;
+}
+.imagem_falsa2 {
+  background-color: #c7313191;
+  width: 100%;
+  padding: 20px;
+}
+.imagem_falsa3 {
+  background-color: #313bc777;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Rodapé */
+.rodape {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Layout responsivo - quando a tela tiver menos de 500px de largura, faz com que as duas colunas se empilhem uma sobre a outra em vez de uma ao lado da outra */
+@media screen and (max-width: 500px) {
+  .coluna, .barra_nav {   
+    flex-direction: column;
+  }
+  .cabecalho {
+    text-align: center;
+    background-image: url(../imagem/banner_celular_420x250.png);
+    background-size: cover;
+    color: white;
+  }
+}
